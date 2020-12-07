@@ -1,6 +1,9 @@
 services:
   - docker
 
+script:
+  - docker build -t rjpdeen/bootbusiness .
+
 deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
