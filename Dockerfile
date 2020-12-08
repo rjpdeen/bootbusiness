@@ -1,3 +1,4 @@
 FROM nginx
 EXPOSE 80
-COPY ./build /usr/share/nginx/html
+WORKDIR '/build'
+COPY . /usr/share/nginx/html
